@@ -1,0 +1,45 @@
+# Herramienta Interactiva de EDA y Reducción de Dimensionalidad
+
+Esta aplicación permite la exploración interactiva de datos y la aplicación de técnicas de reducción de dimensionalidad usando Streamlit.
+
+## Características
+
+- **Carga de datos**: Desde archivo local o ejemplo de GitHub.
+- **Exploración de datos**: Visualización de estadísticas, valores faltantes, histogramas, boxplots y matriz de correlación.
+- **Preprocesamiento**: Imputación de valores faltantes, escalado y codificación de variables categóricas.
+- **Reducción de dimensionalidad**: PCA, LDA, t-SNE y UMAP con comparación de métodos.
+- **Evaluación**: Métricas de clustering y clasificación (Silhouette, ARI, NMI, Accuracy kNN).
+- **Exportación**: Descarga de datos filtrados, embeddings y figuras.
+
+## Requisitos
+
+- Python 3.8+
+- Instalar dependencias:
+
+```sh
+pip install streamlit pandas numpy seaborn altair matplotlib scikit-learn umap-learn plotly kaleido
+```
+
+## Uso
+
+Ejecuta la aplicación con:
+
+```sh
+streamlit run app.py
+```
+
+Luego abre el navegador en la URL que indica Streamlit.
+
+## Estructura
+
+- [`app.py`](app.py): Código principal de la aplicación Streamlit.
+- `.vscode/settings.json`: Configuración recomendada para pruebas unitarias (no se usan en este proyecto).
+
+## Notas
+
+- El archivo de ejemplo se descarga automáticamente desde GitHub si no se sube uno propio.
+- Para exportar imágenes, asegúrate de tener instalado `kaleido`.
+
+## Autor
+
+Proyecto para examen de Procesamiento de Datos.
